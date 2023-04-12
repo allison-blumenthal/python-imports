@@ -1,9 +1,8 @@
+class Washer:
 
-
-class Washer(Appliance):
-
-    def __init__(color, heat_method):
-        super.__init__(color, heat_method)
+    def __init__(self, color, heat_method):
+        self.color = color
+        self.heat_method = heat_method
 
     def wash_clothes(setting="normal"):
         if setting == "delicates":
